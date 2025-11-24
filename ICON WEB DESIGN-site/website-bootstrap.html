@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Criação de sites, landing pages e páginas de vendas com design moderno e responsivo.">
+  <meta name="keywords" content="web design, criação de sites, landing pages, SEO, marketing digital">
+
+  <title>Icon Web Design Website</title>
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <!-- Splide CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Anton&display=swap" rel="stylesheet" />
+  <!-- Normalize & Custom CSS -->
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="website-bootstrap.css" />
+
+
+</head>
+<body>
+
+<!-- Navbar -->
+<header> 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top px-3" >
+     <div class="container-fluid">
+  
+  
+      <!-- Ícone Hamburguer personalizado -->
+      <button class="custom-toggler navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
+      </button>
+
+  <!-- Logo centralizado -->
+  <a class="navbar-brand mx-auto" href="#">
+    <img src="images/web-design-logo6.png" style="height:38px;" alt="Icon Web Design Logo">
+  </a>
+
+  <!-- Botões à direita -->
+  <div class="user-section d-flex align-items-center d-lg-none"
+    style=" gap: 20px" >
+   
+<a href="website-bootstrap-cadastro.html"><i class="fas fa-user-plus me-1"></i> </a>
+
+  </div>
+
+  <!-- Menu colapsável -->
+  <div class="collapse navbar-collapse justify-content-between mt-2 ms-lg-3 mt-lg-0" id="mainNavbar">
+    <ul class="navbar-nav me-auto">
+  
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+      <i class="fas fa-home me-2 "></i> Home
+    </a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="website-bootstrap-about.html">
+      <i class="fas fa-info-circle me-2 "></i> Sobre
+    </a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="#whatsapp-contato">
+    <i class="fas fa-envelope me-2"></i> Contato
+  </a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="#nossos-trabalhos">
+    <i class="fas fa-server me-2"></i> Serviços
+  </a>
+</li>
+
+
+
+<li class="nav-item">
+  <a class="nav-link" href="tecnologia.html">
+    <i class="fas fa-laptop me-2"></i> Tecnologia
+  </a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="blog.html">
+    <i class="fas fa-blog me-2"></i> Blog
+  </a>
+</li>
+
+</ul>
+
+
+    <!-- Botões no modo desktop -->
+    <div class="user-section d-none d-lg-flex align-items-center"
+      style=" gap: 20px" >
+           <a href="website-bootstrap-cadastro.html"><i class="fas fa-user-plus me-1"></i>Cadastrar</a>
+    </div>
+  </div>
+   </div>
+  </nav>
+</header>
+
+
+<div class="hero-section text-white mt-5">
+  <div class="container px-3">
+    <div class="row align-items-center">
+      
+      <!-- Texto -->
+      <div class="col-12 col-md-6 col-lg-5 custom-highlight text-shadow mb-4 mb-md-0">
+        <h1 class="display-5 fw-bold animated-title">
+          Criação de Sites Profissionais com o <br>
+          <span class="highlight-underline">melhor custo benefício para seu negócio<br></span>
+        </h1>
+        <p class="lead fs-5">
+          Com mais de 10 anos de experiência e mais de 900 clientes atendidos, somos especialistas na criação de sites feitos sob medida para sua empresa, negócio ou produto.
+        </p>
+        <a href="website-bootstrap-cadastro.html" class="btn btn-gradient btn-lg mt-3 shadow-lg">Junte-se a nós</a>
+      </div>
+
+      <!-- Imagem -->
+      <div class="col-12 col-md-6 col-lg-6 offset-lg-1 text-center text-md-end">
+        <img src="images/imagem23.webp" alt="Imagem de destaque" class="img-fluid rounded shadow-lg">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Jumbotron -->
+<div class="container-fluid">
+  <div class="row jumbotron p-4">
+    <div class="col-md-9">
+      <p class="lead">"Na ICON WEB DESIGN, transformamos ideias em sites profissionais, modernos e responsivos conectando sua marca ao mundo digital com excelência."</p>
+    </div>
+    <div class="col-md-3 text-end">
+      <a href="#nossos-trabalhos" class="btn btn-outline-light btn-lg">Saiba mais</a>
+    </div>
+  </div>
+</div>
+
+<!-- Carousel-Slider -->
+<div id="matrizSlide" class="carousel slide  custom-slide  bg-white" data-bs-ride="carousel" data-bs-interval="5000">
+  
+  <!-- Indicadores -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#matrizSlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#matrizSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#matrizSlide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#matrizSlide" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner artificial">
+    <div class="carousel-item active">
+      <div class="container  py-5 px-4  rounded-4 shadow-lg bg-dark text-white custom-slide-bg">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h3 class="fw-bold">A Inteligência Artificial, o Canva e o Gemini podem ajudar na criação de um site e conteúdos digitais para sua empresa, use nosso Chat Gemini</h3>
+            <p class="lead mt-3">No cenário digital atual, empresas que desejam crescer e se destacar precisam adotar ferramentas que proporcionem agilidade, eficiência e qualidade. A união ...</p>
+             <a href="tecnologia.html" class="btn btn-outline-light mb-3 px-4 py-2">Saiba mais</a>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="images/imagem44.jpg" class="img-fluid rounded-3 shadow-sm" alt="Slide 1">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="container py-5 px-4 rounded-4 shadow-lg bg-dark text-white custom-slide-bg">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h3 class="fw-bold">Gemini: Inteligência aplicada à criação de conteúdo</h3>
+            <p class="lead mt-3">No cenário digital atual, empresas que desejam crescer e se destacar precisam adotar ferramentas que proporcionem agilidade, eficiência e qualidade. A união entre Inteligência Artificial...</p>
+            <a href="tecnologia.html#artigo" class="btn btn-outline-light mb-3 px-4 py-2">Saiba mais</a>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="images/gemini1.jpg" class="img-fluid rounded-3 shadow-sm" alt="Slide 2">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="container py-5 px-4 rounded-4 shadow-lg bg-dark text-white custom-slide-bg">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="display-5 fw-bold">Conheça o WordPress</h2>
+            <p class="lead mt-3">A plataforma de publicação de código aberto escolhida por milhões de sites ao redor do mundo — de criadores e pequenas empresas a grandes corporações.</p>
+            <a href="website-bootstrap-about.html" class="btn btn-outline-light mb-3 px-4 py-2">Saiba mais</a>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="images/wordpress-image2.webp" class="img-fluid rounded-3 shadow-sm" alt="Slide 3">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+   <div class="carousel-item">
+      <div class="container py-5 px-4 rounded-4 shadow-lg bg-dark text-white custom-slide-bg">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h3 class="fw-bold">Inteligência Artificial e Automação na criação de sites</h3>
+            <p class="lead mt-3">Além do conteúdo e do design, a própria estrutura dos sites pode ser criada com o auxílio de plataformas que utilizam inteligência artificial....</p>
+            <a href="inteligencia-ia.html" class="btn btn-outline-light mb-3 px-4 py-2">Saiba mais</a>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="images/imagem46.webp" class="img-fluid rounded-3 shadow-sm" alt="Slide 4">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+   
+</div>
+
+
+<!-- PC2 section -->
+<section class="hero2 py-5  text-dark bg-white">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      
+       <div class="col-lg-6 text-center">
+        <img src="images/imagem22.webp" 
+        class="img-fluid border-0 shadow-none p-0 m-0 rounded-3" 
+         alt="computador" />
+              </div>
+
+      <!-- Texto -->
+      <div class="col-lg-6">
+        <h2 class="display-5 fw-bold mb-4">Seu negócio precisa de um Site Profissional e seguro</h2>
+        <p class="lead">Ter um site bem planejado e visualmente atraente é fundamental para destacar sua empresa no mercado, gerar mais oportunidades e aumentar seu faturamento. Além de fortalecer sua credibilidade, um site estratégico conecta sua marca ao público certo e transforma visitantes em clientes.</p>
+      </div>
+
+      </div>
+   </div>
+</section>
+<!-- fim do PC section -->
+
+<!-- Parallax Section -->
+<section class="parallax-section"></section>
+
+<!-- If you want it... section -->
+<section class="create py-5 bg-light text-dark">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      
+
+      <div class="col-lg-6 text-center">
+                <img src="images/imagem10.jpg" class="img-fluid" alt="Philosophy" />
+      </div>
+
+      <!-- Texto -->
+      <div class="col-lg-6">
+        <h2 class="display-5 fw-bold mb-4">Se você quiser... nós criamos.</h2>
+         <p class="lead">
+Com design estratégico e visual impactante, desenvolvemos conteúdos que envolvem seu público e se adaptam perfeitamente a todos os dispositivos. Seja para destacar sua marca, contar uma história ou vender um produto, criamos experiências digitais sob medida para o que você deseja alcançar.
+
+Se você quer um site moderno, responsivo e com identidade única você está no lugar certo. Transforme seu portfólio em uma verdadeira obra de arte.
+         </p> 
+          <a href="#" class="btn btn-create">Saiba mais</a>     
+       </div>
+
+              
+             
+      </div>
+   </div>
+</section>
+<!-- fim do If you want it... section -->
+
+
+
+
+
+
+
+<!-- Nossos trabalhos section -->
+
+<div class="trabalhos" id="nossos-trabalhos">
+  <div class="container">
+    <h2 class="titulo-principal text-center">Confira alguns de nossos trabalhos</h2>
+    <h3 class="subtitulo text-center mb-3">
+      Somos especialistas em criar sites institucionais e landing pages, veja alguns trabalhos publicados
+    </h3>
+
+    <div class="row justify-content-center align-items-center mb-5" id="galeria-trabalhos">
+      <!-- Adicione quantos quiser -->
+      <div class="col-12 col-lg-4 text-white mb-4 trabalho">
+        <img src="images/imagem30.webp" class="card-img-top" alt="Site institucional para empresa A" />
+      </div>
+      <div class="col-12 col-lg-4 text-white mb-4 trabalho">
+        <img src="images/imagem31.webp" class="card-img-top" alt="Landing page para campanha B" />
+      </div>
+      <div class="col-12 col-lg-4 text-white mb-4 trabalho">
+        <img src="images/imagem32.webp" class="card-img-top" alt="Website moderno para negócio C" />
+      </div>
+      <div class="col-12 col-lg-4 text-white mb-4 trabalho">
+        <img src="images/imagem33.webp" class="card-img-top" alt="Projeto responsivo para empresa D" />
+      </div>
+      <div class="col-12 col-lg-4 text-white mb-4 trabalho">
+        <img src="images/imagem34.webp" class="card-img-top" alt="Página de vendas para produto E" />
+      </div>
+      <div class="col-12 col-lg-4 text-white mb-4 trabalho">
+        <img src="images/imagem35.webp" class="card-img-top" alt="Site institucional para cliente F" />
+      </div>
+      <div class="col-12 col-lg-4 text-white mb-4 trabalho">
+        <img src="images/imagem36.webp" class="card-img-top" alt="Design moderno para negócio G" />
+      </div>
+      <div class="col-12 col-lg-4 text-white mb-4 trabalho">
+        <img src="images/imagem37.webp" class="card-img-top" alt="Landing page promocional para H" />
+      </div>
+
+      <div class="col-12 col-lg-4 text-white mb-4 trabalho">
+        <img src="images/imagem38.webp" class="card-img-top" alt="Design moderno para negócio G" />
+      </div>
+      <div class="col-12 col-lg-4 text-white mb-4 trabalho">
+        <img src="images/imagem39.webp" class="card-img-top" alt="Landing page promocional para H" />
+      </div>
+
+      <div class="col-12 col-lg-4 text-white mb-4 trabalho">
+        <img src="images/imagem40.webp" class="card-img-top" alt="Design moderno para negócio G" />
+      </div>
+      <div class="col-12 col-lg-4 text-white mb-4 trabalho">
+        <img src="images/imagem41.webp" class="card-img-top" alt="Landing page promocional para H" />
+      </div>
+      <!-- ... adicione mais se quiser ... -->
+    </div>
+  </div>
+</div>
+
+<!-- Paginação (vazia) -->
+<nav class="paginacao" aria-label="Navegação de páginas">
+  <ul class="pagination justify-content-center" id="paginacao-container"></ul>
+</nav>
+
+
+<!-- JavaScript da Paginação -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const trabalhos = document.querySelectorAll('.trabalho');
+    const paginacaoContainer = document.getElementById('paginacao-container');
+    const porPagina = 6;
+    const totalPaginas = Math.ceil(trabalhos.length / porPagina);
+    let paginaAtual = 1;
+
+    function mostrarPagina(pagina) {
+      paginaAtual = pagina;
+
+      // Oculta todos os trabalhos
+      trabalhos.forEach((el, index) => {
+        el.classList.toggle('d-none', index < (pagina - 1) * porPagina || index >= pagina * porPagina);
+      });
+
+      // Atualiza paginação
+      document.querySelectorAll('.page-item').forEach(el => el.classList.remove('active'));
+      const ativo = document.querySelector(`.page-link[data-pagina="${pagina}"]`);
+      if (ativo) {
+        ativo.parentElement.classList.add('active');
+        ativo.setAttribute('aria-current', 'page');
+      }
+
+      // Habilita/desabilita anterior/próximo
+      document.getElementById('anterior').classList.toggle('disabled', pagina === 1);
+      document.getElementById('proximo').classList.toggle('disabled', pagina === totalPaginas);
+    }
+
+    // Gera os botões de paginação
+    function gerarPaginacao() {
+      paginacaoContainer.innerHTML = '';
+
+      // Botão Anterior
+      paginacaoContainer.innerHTML += `
+        <li class="page-item disabled" id="anterior">
+          <a class="page-link" href="#" aria-label="Página anterior">Anterior</a>
+        </li>
+      `;
+
+      // Botões numerados
+      for (let i = 1; i <= totalPaginas; i++) {
+        paginacaoContainer.innerHTML += `
+          <li class="page-item ${i === 1 ? 'active' : ''}">
+            <a class="page-link" href="#" data-pagina="${i}">${i}</a>
+          </li>
+        `;
+      }
+
+      // Botão Próximo
+      paginacaoContainer.innerHTML += `
+        <li class="page-item ${totalPaginas === 1 ? 'disabled' : ''}" id="proximo">
+          <a class="page-link" href="#" aria-label="Próxima página">Próximo</a>
+        </li>
+      `;
+
+      // Eventos dos botões
+      document.querySelectorAll('.page-link[data-pagina]').forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const pagina = parseInt(e.target.dataset.pagina);
+          if (!isNaN(pagina)) mostrarPagina(pagina);
+        });
+      });
+
+      document.getElementById('anterior').addEventListener('click', e => {
+        e.preventDefault();
+        if (paginaAtual > 1) mostrarPagina(paginaAtual - 1);
+      });
+
+      document.getElementById('proximo').addEventListener('click', e => {
+        e.preventDefault();
+        if (paginaAtual < totalPaginas) mostrarPagina(paginaAtual + 1);
+      });
+    }
+
+    gerarPaginacao();
+    mostrarPagina(paginaAtual);
+  });
+</script>
+
+
+<!-- fim do Paginação acessível -->
+
+
+<!-- Nossa filosofia section -->
+<section class="filosofia py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      
+      <!-- Texto -->
+      <div class="col-lg-6">
+        <h2 class="display-5 fw-bold mb-4">Nossa filosofia</h2>
+        <p class="lead text-dark">Acreditamos que o design é mais do que aparência — é funcionalidade, experiência e propósito.
+Cada projeto é desenvolvido com foco na usabilidade, acessibilidade e identidade única do cliente.
+Unimos criatividade e tecnologia para criar soluções digitais impactantes e intuitivas.
+Valorizamos a comunicação transparente e o trabalho colaborativo em cada etapa do processo.
+Nosso compromisso é transformar ideias em experiências digitais memoráveis e eficazes.
+
+</p>
+      </div>
+
+              
+              <div class="col-lg-6 text-center">
+                <img src="images/image14.jpg" class="img-fluid" alt="Philosophy" />
+              </div>
+
+      </div>
+   </div>
+</section>
+<!-- fim do Nossa filosofia section -->
+
+<!-- SERVIÇOS section -->
+<section class="servicos py-5">
+  <div class="container">
+    <h2 class="titulo text-center text-white mb-5">Tudo o que você precisa para<br>o seu site em um só lugar!</h2>
+    <h3 class="text-center text-white">NOSSOS SERVIÇOS</h3>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="servico1 d-flex align-items-start p-4 h-100 shadow-sm rounded-4 bg-white">
+          <img src="images/logo-pc3.webp" alt="WordPress" class="icon-servico1 me-3" />
+          <div>
+            <h3 class="text-dark">Criação de Sites WordPress</h3>
+            <p class="text-dark">Sites personalizados, responsivos e otimizados para o Google.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="servico1 d-flex align-items-start p-4 h-100 shadow-sm rounded-4 bg-white">
+          <img src="images/logo-pc2.webp" alt="Hospedagem" class="icon-servico1 me-3" />
+          <div>
+            <h3 class="text-dark">Hospedagem de Alta Qualidade</h3>
+            <p class="text-dark">Velocidade e estabilidade para o seu site, com suporte técnico dedicado.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="servico1 d-flex align-items-start p-4 h-100 shadow-sm rounded-4 bg-white">
+          <img src="images/suporte-logo.webp" alt="Suporte Técnico" class="icon-servico1 me-3" />
+          <div>
+            <h3 class="text-dark">Suporte Técnico</h3>
+            <p class="text-dark">Estamos sempre prontos para ajudar com dúvidas e ajustes no seu site.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="servico1 d-flex align-items-start p-4 h-100 shadow-sm rounded-4 bg-white">
+          <img src="images/manutencao.webp" alt="Manutenção" class="icon-servico1 me-3" />
+          <div>
+            <h3 class="text-dark">Manutenção do Site</h3>
+            <p class="text-dark">Seu site sempre atualizado, seguro e funcionando perfeitamente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- FIM do SERVIÇOS section -->
+
+
+<!-- PC section -->
+<section class="hero py-5  text-dark mt-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      
+       <div class="col-lg-6 text-center">
+        <img src="images/pc-image.webp" 
+        class="img-fluid border-0 shadow-none p-0 m-0" 
+         alt="computador" />
+              </div>
+
+      <!-- Texto -->
+      <div class="col-lg-6">
+        <h2 class="display-5 fw-bold mb-4">Quanto mais rápido for seu site, mais possibilidade de vendas você terá!</h2>
+        <p class="lead">A otimização da velocidade do seu site é essencial para garantir o sucesso online do seu produto. Proporcione uma experiência de navegação rápida e leve aos usuários do seu site. 
+
+Uma boa otimização proporciona uma vantagem nos resultados de pesquisa e buscas no Google, o que tende a  aumentar a visibilidade do seu site e o tráfego orgânico.</p>
+      </div>
+
+      </div>
+   </div>
+</section>
+<!-- fim do PC section -->
+
+<!-- Criamos seu site section -->
+<section class="criamos py-5">
+  <div class="container">
+    <h2 class="titulo1 text-center mb-5">Criamos seu site para atender às<br>necessidades do seu negócio</h2>
+   
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-4">
+      <div class="servico2 d-flex align-items-start h-100 p-4 m-0
+      shadow-sm rounded-4">
+          <img src="images/logo-pc3.webp" alt="WordPress" class="icon-servico2 me-3" />
+          <div>
+            <h3>Site institucional</h3>
+            <p>Criamos sites institucionais modernos e personalizados para transmitir a essência e profissionalismo da sua marca.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="servico2 d-flex align-items-start h-100 p-4 m-0
+        shadow-sm rounded-4">
+          <img src="images/logo-pc-foguete.webp" alt="Hospedagem" class="icon-servico2 me-3" />
+          <div>
+            <h3>Landing Pages</h3>
+            <p>Criamos landing pages de alta performance, focadas em capturar leads e maximizar suas vendas com layouts impactantes e conteúdos envolventes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="servico2 d-flex align-items-start h-100 p-4 m-0
+        shadow-sm rounded-4">
+          <img src="images/logo-pc-dinheiro.webp" alt="Suporte Técnico" class="icon-servico2 me-3" />
+          <div>
+            <h3>Página de Vendas</h3>
+            <p>Desenvolvemos páginas de vendas otimizadas para conversão, com design estratégico e persuasivo para atrair clientes e impulsionar seus resultados.</p>
+          </div>
+        </div>
+      </div>
+
+     
+    </div>
+  </div>
+</section>
+<!-- fim do Criamos seu site section -->
+
+
+<!-- Google section  -->
+<section class="google-section p-5 text-white position-relative overflow-hidden">
+  <div class="container">
+    <div class="row align-items-center gx-5">
+
+      <!-- Texto -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="google-title display-5 fw-bold mb-3">Seja encontrado nas<br> pesquisas do Google</h2>
+        <p class="google-lead mb-4">Tenha uma presença digital para sua empresa, negócio ou produto com um novo site e alcance mais pessoas que buscam pelos seus serviços todos os dias no Google.</p>
+        <a href="#" class="btn google-btn btn-lg">Fale com um consultor <i class="fab fa-whatsapp fa-lg ms-2"></i></a>
+      </div>
+
+      <!-- Imagem -->
+      <div class="col-lg-6 text-center">
+        <img src="images/imagem53.webp" class="img-fluid rounded shadow-sm" alt="computador">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- inicio review section -->
+<!-- Início da seção de Avaliações -->
+<section class="reviews py-5 bg-light" id="reviews">
+  <div class="container">
+    <h2 class="heading text-center mb-5">
+      <span>Por que nossos clientes confiam
+no nosso trabalho?</span>
+    </h2>
+    <p class="intro-review text-center mx-auto">
+  Valorizamos cada contato e o relacionamento com os nossos clientes.
+  Investimos em um atendimento cada vez mais humanizado e com clareza nas informações.
+</p>
+
+    <div class="swiper reviews-slider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide box">
+          <img src="images/letraT.png" alt="Cliente Thiago">
+          <h3>Thiago Almeida</h3>
+          <p>O site da minha empresa ficou incrível! Atendimento rápido e muito profissional. Recomendo fortemente a Icon Web Design.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="images/letraF.png" alt="Cliente Flavia">
+          <h3>Flavia dos Santos</h3>
+          <p>Equipe atenciosa, entrega rápida e visual moderno! Meu novo site está atraindo muito mais clientes.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="images/letraA.webp" alt="Cliente Ana Carolina">
+          <h3>Ana Carolina</h3>
+          <p>Meu site ficou maravilhoso e totalmente responsivo. Atendimento nota 10!</p>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Fim da seção de Avaliações -->
+
+
+
+<!-- WhatsApp section -->
+<section class="whatsapp py-5 text-dark" id="whatsapp-contato">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col">
+        <h2 class="whatsapp-titulo1">Fale Conosco pelo WhatsApp</h2>
+        <p class="lead">Escolha o departamento para o qual você gostaria de falar:</p>
+      </div>
+    </div>
+    
+    <div class="row g-5">
+      <div class="col-lg-6 text-center whatsapp2">
+        <h3 class="fw-bold mb-3">Vendas</h3>
+        <a href="#" class="whatsapp-link text-decoration-none text-dark" target="_blank">
+          <i class="fab fa-whatsapp fa-3x text-success"></i>
+          <p class="lead mb-0">(99) 44667-5545</p>
+        </a>
+      </div>
+      
+      <div class="col-lg-6 text-center whatsapp2">
+        <h3 class="fw-bold mb-3">Suporte</h3>
+        <a href="#" class="whatsapp-link text-decoration-none text-dark" target="_blank">
+          <i class="fab fa-whatsapp fa-3x text-success"></i>
+          <p class="lead mb-0">(99) 33737-2803</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fim do WhatsApp section -->
+
+
+<!-- Conecte-se -->
+<div class="container-fluid padding">
+  <div class="row text-center padding">
+    <div class="col-12">
+      <h2>Connect</h2>
+    </div>
+    <div class="col-12 social">
+      <a href="#"><i class="fab fa-facebook fa-2x mx-2"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x mx-2"></i></a>
+      <a href="#"><i class="fab fa-google-plus-g fa-2x mx-2"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-2x mx-2"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-2x mx-2"></i></a>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Titulo Chatbot -->
+<div class="container mt-5">
+    <!-- Título e descrição -->
+    <div class="chatbot-header text-center mb-4">
+        <h2 class="chatbot-title">Tire suas dúvidas com nosso Chatbot</h2>
+        <p class="chatbot-description">
+            Nosso assistente virtual está pronto para ajudar você com informações sobre os serviços da 
+            <strong>Icon Web Design</strong>, formas de pagamento, prazos, suporte técnico e muito mais. 
+            Basta digitar sua pergunta abaixo e clicar em <strong>"Enviar"</strong>.
+        </p>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="card shadow ai-card mx-3">
+        <div class="card-header ai-header text-white text-center py-3">
+            <h4 class="mb-0">Icon Web Design Chatbot</h4>
+        </div>
+        <div class="card-body">
+            <div id="chat-log" class="chat-log mb-3"></div>
+            <div class="input-group">
+                <input id="user-input" type="text" class="form-control ai-input" placeholder="Digite sua mensagem" />
+<button onclick="enviarMensagem()" class="btn ai-btn">Enviar</button>
+
+<script src="static/script.js"></script>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Posts Relacionados -->
+<section class="related-posts-section my-5">
+
+  <div class="container">
+    <h3 class="text-center mb-4" style="color: orange;">Posts Relacionados</h3>
+    <div class="row">
+
+     <!-- Post 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/gemini6.jpg" class="card-img-top" alt="Site para médicos">
+          <div class="card-body">
+           <h5 class="card-title">Gemini: a inteligência que dá voz à sua marca</h5>
+            <p class="card-text">No dinâmico universo do marketing digital, a eficiência e a criatividade são essenciais. A união da Inteligência Artificial com ferramentas de design e comunicação oferece um caminho inovador para empresas e criadores de conteúdo.</p>
+            <p class="text-muted"><small>23 de maio de 2025 | Blog</small></p>
+             <a href="gemini-canvas.html" class="btn btn-orange-gradient btn-sm rounded-pill px-4">Leia mais</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/imagem48.webp" class="card-img-top" alt="Blog impulsionando no Google">
+          <div class="card-body">
+            <h5 class="card-title">Como o Gerenciamento e Publicações no Blog do seu Site Podem Impulsionar o Crescimento Orgânico no Google</h5>
+            <p class="card-text">No universo digital atual, estar bem posicionado no Google é essencial para atrair novos clientes e fortalecer a autoridade da sua marca.</p>
+            <p class="text-muted"><small>22 de maio de 2025 | Blog</small></p>
+             <a href="blog-icon.html" class="btn btn-orange-gradient btn-sm rounded-pill px-4">Leia mais</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/imagem51.jpg" class="card-img-top" alt="SEO e Google Ads">
+          <div class="card-body">
+            <h5 class="card-title">Aprendendo SEO na Prática</h5>
+            <p class="card-text">No cenário digital atual, empresas que desejam crescer e se destacar precisam adotar ferramentas que proporcionem agilidade, eficiência e qualidade. A união entre Inteligência Artificial, plataformas de design como o Canva e assistentes de conteúdo como o ChatGPT... </p>
+            <p class="text-muted"><small>22 de maio de 2025 | Blog</small></p>
+            <a href="inteligencia-ia.html" class="btn btn-orange-gradient btn-sm rounded-pill px-4">Leia mais</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Rodapé -->
+<footer class="bg-light text-center text-lg-start mt-5">
+  <div class="container p-4">
+    <div class="row text-center">
+      <div class="col-md-3 text-md-start">
+     <img src="images/web-design-logo6.png" 
+     alt="Logo Icon Web Design" class="mb-3" />
+
+        <p><i class="fab fa-whatsapp me-2"></i>4545-4786</p>
+        <p><i class="fas fa-envelope me-2"></i>contato@iconweb.com</p>
+        <p><i class="fas fa-map-marker-alt me-2"></i>Rua Pedra verde, São Paulo, SP</p>
+      </div>
+
+       <div class="col-md-3 text-md-start">
+  <h5>Sobre a Icon Web Design</h5>
+  <ul class="list-unstyled">
+    <li>
+      <a class="text-decoration-none text-dark d-block mb-2" href="#">
+        <i class="fas fa-home me-2"></i>Home
+      </a>
+    </li>
+    <li>
+      <a class="text-decoration-none text-dark d-block mb-2" href="website-bootstrap-about.html">
+        <i class="fas fa-info-circle me-2"></i>Sobre
+      </a>
+    </li>
+    <li>
+      <a class="text-decoration-none text-dark d-block mb-2" href="#whatsapp-contato">
+        <i class="fas fa-envelope me-2"></i>Contato
+      </a>
+    </li>
+    <li>
+      <a class="text-decoration-none text-dark d-block mb-2" href="#nossos-trabalhos">
+        <i class="fas fa-server me-2"></i>Serviços
+      </a>
+    </li>
+    
+    <li>
+      <li>
+      <a class="text-decoration-none text-dark d-block" href="tecnologia.html">
+        <i class="fas fa-laptop me-2"></i>Tecnologia
+      </a>
+    </li>
+
+    <li>
+      <a class="text-decoration-none text-dark d-block" href="blog.html">
+        <i class="fas fa-blog me-2"></i>Blog
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+      <div class="col-md-3 text-md-start">
+        <h5>Nosso horário</h5>
+        <p><i class="fas fa-clock me-2"></i>Segunda: 10h - 17h</p>
+        <p><i class="fas fa-clock me-2"></i>Sábado: 10h - 13h</p>
+        <p><i class="fas fa-clock me-2"></i>Domingo: Fechado</p>
+      </div>
+      
+      <div class="col-md-3 text-md-start">
+        <h5>Quem somos</h5>
+        <p>Com mais de 10 anos de experiência, a Icon Web Design é comprometida em entregar soluções de qualidade, de forma prática e eficiente, impulsionando resultados para clientes em todo o Brasil.</p>
+        <div class="mt-3">
+          <a href="#" class="text-dark me-3"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-dark me-3"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+      </div>
+
+      <!-- Rodapé inferior -->
+      <div class="col-12 mt-4 text-center">
+        <hr />
+        <p>&copy; 2025 - Icon Web Design | Criação de sites profissionais</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+function enviarMensagem() {
+    const input = document.getElementById("user-input");
+    const mensagem = input.value.trim();
+    const chatLog = document.getElementById("chat-log");
+
+    if (!mensagem) return;
+
+    // Mostra mensagem do usuário com prefixo "Você:"
+    const userDiv = document.createElement("div");
+    userDiv.className = "chat-message user-message";
+    userDiv.innerHTML = "<strong>Você:</strong> " + mensagem;
+    chatLog.appendChild(userDiv);
+
+    input.value = "";
+
+    fetch("http://127.0.0.1:5000/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: mensagem })
+    })
+    .then(res => res.json())
+    .then(data => {
+        const botDiv = document.createElement("div");
+        botDiv.className = "chat-message bot-message";
+        botDiv.innerHTML = "<strong>Bot:</strong> " + data.reply;
+        chatLog.appendChild(botDiv);
+        chatLog.scrollTop = chatLog.scrollHeight;
+    })
+    .catch(() => {
+        const errorDiv = document.createElement("div");
+        errorDiv.className = "chat-message bot-message";
+        errorDiv.innerText = "❌ Erro ao conectar com o servidor.";
+        chatLog.appendChild(errorDiv);
+    });
+}
+</script>
+
+
+</script>
+
+<!-- Script para animação do hambúrguer -->
+<script>
+  const toggler = document.querySelector('.custom-toggler');
+  toggler.addEventListener('click', () => {
+    toggler.classList.toggle('open');
+  });
+
+  // Remove focus após clique nos links (remove underline persistente)
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => link.blur());
+  });
+
+  </script>
+
+<!-- Script para os artigos em outra pagina -->
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    const hash = window.location.hash;
+
+    if (hash === '#artigo') {
+      const targetSlide = document.querySelector(hash);
+      const carouselElement = document.querySelector('#matrizSlide');
+
+      if (targetSlide && carouselElement) {
+        const slideItems = carouselElement.querySelectorAll('.carousel-item');
+
+        slideItems.forEach((item, index) => {
+          if (item.id === 'artigo') {
+            const carousel = bootstrap.Carousel.getOrCreateInstance(carouselElement);
+            carousel.to(index); // Vai para o slide correto
+          }
+        });
+      }
+    }
+  });
+</script>
+
+
+
+<!-- SwiperJS (deve vir antes da inicialização) da section Avaliação dos Clientes -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- Inicialização do Swiper Avaliação dos Clientes-->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var swiperFeatured = new Swiper(".reviews-slider", {
+    spaceBetween: 20,
+    grabCursor: true,
+    loop: true,
+    centeredSlides: true,
+    autoplay: { delay: 4000, disableOnInteraction: false },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      992: { slidesPerView: 3 },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+});
+
+</script>
+
+
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+
+</html>
