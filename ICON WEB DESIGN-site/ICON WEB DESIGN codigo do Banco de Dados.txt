@@ -1,0 +1,21 @@
+
+/*Esse é codigo usado para construir o banco de dados do site ICON WEB DESIGN */
+
+
+
+CREATE DATABASE IF NOT EXISTS iconweb DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+USE iconweb;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    nascimento DATE NOT NULL,
+    endereco VARCHAR(150),
+    bairro VARCHAR(100),
+    cidade VARCHAR(100),
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
