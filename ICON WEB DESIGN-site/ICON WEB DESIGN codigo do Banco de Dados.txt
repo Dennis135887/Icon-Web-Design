@@ -1,5 +1,5 @@
 
-/*Esse é codigo usado para construir o banco de dados do site ICON WEB DESIGN */
+/*Esse é o codigo usado para construir o banco de dados do site ICON WEB DESIGN */
 
 
 
@@ -19,3 +19,4 @@ CREATE TABLE IF NOT EXISTS usuarios (
     cidade VARCHAR(100),
     criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
